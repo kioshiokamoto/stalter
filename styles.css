@@ -1,0 +1,119 @@
+:root {
+  --red: #dc4519;
+  --pale: #fcf0f3;
+}
+
+html {
+  scroll-behavior: smooth;
+  background-color: var(--pale);
+}
+
+.section {
+  height: 100vh;
+  width: 100%;
+}
+
+.bg-1 {
+  background-color: var(--pale);
+}
+.bg-2 {
+  background-color: aquamarine;
+}
+.bg-3 {
+  background-color: #facbd3;
+}
+
+.contact-button {
+  background-color: var(--red);
+}
+body {
+  position: relative;
+}
+
+.navbar {
+  overflow: hidden;
+  background-color: var(--pale);
+  display: flex;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 60px;
+  z-index: 3;
+}
+
+.navbar--image {
+  width: 120px;
+}
+.navbar--item {
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 16px 32px;
+
+  font-family: "Neulis Alt";
+  font-weight: 300;
+  color: var(--red);
+  position: relative;
+  text-align: center;
+}
+
+.navbar--item-active {
+  position: relative;
+}
+
+.navbar--item-active::before {
+  content: "";
+  width: 10px;
+  height: 10px;
+  background-color: var(--red);
+  position: absolute;
+  top: 0;
+  left: 50%;
+  right: 50%;
+  border-radius: 50%;
+}
+
+.navbar--button {
+  text-transform: uppercase;
+  text-decoration: none;
+  color: var(--pale);
+  background-color: var(--red);
+  padding: 16px 32px;
+  border-radius: 32px;
+  font-family: "Neulis Alt";
+  font-weight: 100;
+}
+
+.hero {
+  text-transform: uppercase;
+  position: relative;
+}
+.hero--image {
+  position: absolute;
+  left: 0;
+  right: 0;
+  height: 100%;
+  z-index: 1;
+}
+
+.hero--info {
+  position: absolute;
+  z-index: 2;
+  left: 10%;
+  top: 40%;
+
+  font-family: "Neulis Alt";
+  font-weight: 200;
+  font-size: 72px;
+}
+.hero--info-unique {
+  font-weight: 400;
+}
+
+.hero--info-underline {
+  text-decoration: underline;
+  text-decoration-color: var(--pale);
+  text-decoration-style: wavy;
+}
