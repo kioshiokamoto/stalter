@@ -1,6 +1,7 @@
 :root {
   --red: #dc4519;
   --pale: #fcf0f3;
+  --black: #000;
 }
 
 html {
@@ -9,15 +10,19 @@ html {
 }
 
 .section {
-  height: 100vh;
+  height: calc(100vh);
   width: 100%;
+}
+
+.screen-height {
+  height: 100vh;
 }
 
 .bg-1 {
   background-color: var(--pale);
 }
 .bg-2 {
-  background-color: aquamarine;
+  background-color: var(--pale);
 }
 .bg-3 {
   background-color: #facbd3;
@@ -46,18 +51,20 @@ body {
 }
 
 .navbar--image {
+  cursor: pointer;
   width: 120px;
 }
+
 .navbar--item {
   text-transform: uppercase;
   text-decoration: none;
   padding: 16px 32px;
-
   font-family: "Neulis Alt";
   font-weight: 300;
   color: var(--red);
   position: relative;
   text-align: center;
+  position: relative;
 }
 
 .navbar--item-active {
@@ -118,4 +125,156 @@ body {
   text-decoration: underline;
   text-decoration-color: var(--pale);
   text-decoration-style: wavy;
+}
+.why {
+  display: flex;
+}
+
+.why--left {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--black);
+  width: 40%;
+}
+
+.why--left h1 {
+  font-family: "Neulis Alt";
+  font-weight: 200;
+  font-size: 64px;
+  color: var(--pale);
+}
+
+.why--left h1 span {
+  font-weight: 400;
+}
+
+.why--right {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  width: 60%;
+}
+
+.why--block {
+  box-shadow: 11px 16px 28px -11px rgba(0, 0, 0, 0.2);
+  padding: 24px 32px;
+  padding-top: 48px;
+  max-width: 600px;
+  border-radius: 20px;
+  margin: 0;
+  border-width: 1px;
+  border-color: #fcf0f3;
+  position: relative;
+}
+
+.why--block:nth-child(1)::before {
+  content: "";
+  position: absolute;
+  background-image: url("assets/images/virus.png");
+  left: -10%;
+  top: -20%;
+  transform: scale(0.7);
+  height: 200px;
+  width: 200px;
+  background-repeat: no-repeat;
+}
+.why--block:nth-child(3)::after {
+  content: "";
+  position: absolute;
+  background-image: url("assets/images/virus.png");
+  right: -20%;
+  bottom: -50%;
+  transform: scale(0.7);
+  height: 200px;
+  width: 200px;
+  background-repeat: no-repeat;
+}
+
+.why--block-title {
+  color: var(--red);
+  margin-bottom: 24px;
+  font-family: "Neulis Alt";
+  font-weight: 500;
+  font-size: 48px;
+  text-align: center;
+}
+
+.why--divider {
+  height: 1px;
+  background-color: var(--red);
+  padding: unset;
+  margin: 0 14px;
+}
+
+.why--block-description {
+  font-family: "Neulis Alt";
+  font-weight: 100;
+  font-size: 18px;
+  color: var(--black);
+  margin-top: 20px;
+}
+
+.us {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.us--block {
+  background-image: linear-gradient(
+    to bottom,
+    var(--pale) 0%,
+    #f1cdc2 25%,
+    var(--pale) 100%
+  );
+  height: 60%;
+  width: 1000px;
+  border-radius: 40px;
+  box-shadow: 11px 16px 28px -11px rgba(0, 0, 0, 0.2);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3px;
+}
+
+.us--block-item {
+  display: flex;
+  flex-direction: column;
+  max-width: 305px;
+  align-items: center;
+  transform: translateY(-12%);
+}
+
+.us--block-image {
+  width: 305px;
+  height: 312px;
+  border-radius: 20px;
+  margin-bottom: 32px;
+}
+
+.us--block-title {
+  color: var(--red);
+  margin-bottom: 6px;
+  font-family: "Neulis Alt";
+  font-weight: 500;
+  font-size: 32px;
+}
+
+.us--block-position {
+  font-family: "Neulis Alt";
+  font-weight: 100;
+  font-size: 18px;
+  color: var(--black);
+  margin-bottom: 6px;
+}
+
+.us--block-description {
+  font-family: "Neulis Alt";
+  font-weight: 200;
+  font-size: 16px;
+  color: var(--black);
+  width: 90%;
 }

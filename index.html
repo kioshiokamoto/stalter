@@ -13,15 +13,20 @@
   </head>
   <body>
     <nav class="navbar">
-      <img class="navbar--image" src="./assets/images/logo.png" />
-      <a href="#acerca" class="navbar--item navbar--item-active">
+      <a href="#hero">
+        <img
+          class="navbar--image navbar--element"
+          src="./assets/images/logo.png"
+        />
+      </a>
+      <a href="#acerca" class="navbar--item navbar--element">
         Sobre nosotras
       </a>
-      <a href="#servicios" class="navbar--item">Servicios</a>
-      <a href="#portafolio" class="navbar--item">Portafolio</a>
-      <a href="#contact" class="navbar--button">Contáctanos</a>
+      <a href="#servicios" class="navbar--item navbar--element">Servicios</a>
+      <a href="#portafolio" class="navbar--item navbar--element">Portafolio</a>
+      <a href="#contact" class="navbar--button navbar--element">Contáctanos</a>
     </nav>
-    <section class="section bg-1 hero">
+    <section class="section bg-1 hero" id="hero">
       <div class="hero--info">
         <p>Crea diseños</p>
         <p>tan <span class="hero--info-unique">únicos</span></p>
@@ -29,7 +34,70 @@
       </div>
       <img class="hero--image" src="./assets/images/hero.png" />
     </section>
-    <section class="section bg-2"></section>
+    <section class="section bg-2 why" id="acerca">
+      <div class="why--left">
+        <h1>¿POR QUÉ <br /><span>NOSOTRAS?</span></h1>
+      </div>
+      <div class="why--right">
+        <div class="why--block">
+          <h1 class="why--block-title">CONFIABILIDAD</h1>
+          <div class="why--divider"></div>
+          <p class="why--block-description">
+            Diseñamos cada proyecto de la mano con el cliente, nos comprometemos
+            a guiarlo y a ayudarle a crear lo que busca.
+          </p>
+        </div>
+        <div class="why--block">
+          <h1 class="why--block-title">CREATIVIDAD</h1>
+          <div class="why--divider"></div>
+          <p class="why--block-description">
+            Creemos en la creatividad como un indispensable para la elaboración
+            y flujo de nuestros proyectos.
+          </p>
+        </div>
+        <div class="why--block">
+          <h1 class="why--block-title">BUEN SERVICIO</h1>
+          <div class="why--divider"></div>
+          <p class="why--block-description">
+            Nuestro trato será único y personalizado para cada uno de nuestros
+            clientes.
+          </p>
+        </div>
+      </div>
+    </section>
+    <section class="section bg-2 us">
+      <div class="us--block">
+        <div class="us--block-item">
+          <img src="/assets/images/SONIA.png" class="us--block-image" />
+          <h1 class="us--block-title">SONIA NICHO</h1>
+          <h2 class="us--block-position">DIRECTORA DE ARTE</h2>
+          <p class="us--block-description">
+            SOY DISEÑADORA E INTERIORISTA, ME GUSTA INTERVENIR EN MIS DISEÑOS
+            CON TENDENCIAS DISRUPTIVAS Y ACTUALES.
+          </p>
+        </div>
+        <div class="us--block-item">
+          <img src="/assets/images/yuyu.png" class="us--block-image" />
+          <h1 class="us--block-title">NAYELY YUCRA</h1>
+          <h2 class="us--block-position">DIRECTORA DE MEDIOS</h2>
+          <p class="us--block-description">
+            SOY DISEÑADORA E ILUSTRADORA, LAS HERRAMIENTAS QUE MAS UTILIZO PARA
+            DISEÑAR SON ADOBE ILLUSTRATOR Y PHOTOSHOP
+          </p>
+        </div>
+        <div class="us--block-item">
+          <img src="/assets/images/JHETKIS.png" class="us--block-image" />
+          <h1 class="us--block-title">JHETKA RIVERA</h1>
+          <h2 class="us--block-position">DIRECTORA CREATIVA</h2>
+          <p class="us--block-description">
+            SOY DISEÑADORA GRÁFICA ESPECIALIZADA EN BRANDING Y DISEÑO EDITORIAL.
+            MI PRINCIPAL OBJETIVO ES IMPULSAR TU PROYECTO AL ÉXITO.
+          </p>
+        </div>
+      </div>
+    </section>
+    <section class="section bg-2" id="servicios"></section>
     <section class="section bg-3"></section>
+    <script src="./index.js"></script>
   </body>
 </html>
