@@ -385,3 +385,69 @@ body {
   color: var(--pale);
   margin-bottom: 80px;
 }
+
+.portafolio {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.portafolio--text {
+  z-index: 2;
+  max-width: 560px;
+}
+
+.portafolio--bg {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.portafolio--all {
+  display: flex;
+}
+
+.portafolio--all-image {
+  width: 100%;
+  height: 100%;
+}
+
+.footer {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer--image {
+  cursor: pointer;
+  width: 160px;
+  background-color: var(--pale);
+  margin-top: 6px;
+  margin-bottom: 6px;
+}
+
+.contact {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.contact--circle {
+  position: relative;
+}
+
+.contact--image {
+  position: absolute;
+}
+
+.contact--title {
+}
+
+.contact--icons {
+  display: flex;
+}
+
+.contact--icon {
+}
