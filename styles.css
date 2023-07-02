@@ -25,7 +25,7 @@ html {
   background-color: var(--pale);
 }
 .bg-3 {
-  background-color: #facbd3;
+  background-color: var(--black);
 }
 
 .contact-button {
@@ -277,4 +277,110 @@ body {
   font-size: 16px;
   color: var(--black);
   width: 90%;
+  height: 80px;
+}
+.dreams {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+.dreams--image {
+  position: absolute;
+  transform: scale(0.7);
+}
+.dreams--text {
+  font-family: "Neulis Alt";
+  font-weight: 100;
+  font-size: 100px;
+  text-align: center;
+  z-index: 2;
+}
+.dreams--text span {
+  font-weight: 500;
+}
+
+.dreams--first {
+  width: 100%;
+  height: 100%;
+}
+
+.dreams--second {
+  position: absolute;
+}
+
+.services {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.services--text {
+  font-family: "Neulis Alt";
+  font-weight: 300;
+  font-size: 72px;
+  text-align: center;
+  z-index: 2;
+  color: var(--pale);
+  line-height: 56px;
+  letter-spacing: 8px;
+}
+
+.services--text span {
+  font-weight: 500;
+  letter-spacing: 2px;
+}
+
+.services--image {
+  position: absolute;
+  width: 66%;
+  right: -64px;
+  bottom: 30%;
+}
+
+.details {
+  display: flex;
+  justify-content: space-between;
+}
+
+.details--item {
+  height: calc(100% - 116px);
+  width: 400px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.details--image {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  overflow: hidden;
+}
+
+.details--image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: 60% 90%;
+}
+
+.details--image .first-image {
+  transform: scale(2);
+}
+
+.details--image .second-image {
+  transform: scale(1.1);
+}
+
+.details--title {
+  font-family: "Neulis Alt";
+  font-weight: 300;
+  font-size: 48px;
+  text-align: center;
+  z-index: 2;
+  color: var(--pale);
+  margin-bottom: 80px;
 }
