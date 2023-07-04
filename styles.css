@@ -432,21 +432,39 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  position: relative;
 }
 
 .contact--circle {
+  margin-top: 108px;
   position: relative;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
 }
 
 .contact--image {
   position: absolute;
+  left: 50%;
+  top: 55%;
+  width: 700px;
+  transform: translate(-50%, -50%);
 }
 
 .contact--title {
+  font-family: "Neulis Alt";
+  font-weight: 300;
+  font-size: 64px;
+  text-align: center;
+  z-index: 2;
+  color: var(--pale);
 }
 
 .contact--icons {
   display: flex;
+  gap: 40px;
 }
 
 .contact--icon {
