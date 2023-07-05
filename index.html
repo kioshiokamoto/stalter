@@ -10,6 +10,12 @@
     />
     <link href="./assets/font/stylesheet.css" rel="stylesheet" />
     <link href="styles.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+    />
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
   </head>
   <body>
     <nav class="navbar">
@@ -138,7 +144,38 @@
       <img class="portafolio--text" src="./assets/images/portafolio.png" />
       <img class="portafolio--bg" src="./assets/images/portafolio-bg.png" />
     </section>
-    <section class="section bg-3 portafolio--all page-view" id="portafolio">
+    <section class="section bg-2 portafolio--all page-view" id="portafolio">
+      <div class="swiper">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+          <!-- Slides -->
+          <div class="swiper-slide">
+            <img
+              class="portafolio--all-image"
+              src="./assets/images/always-mood.png"
+            />
+          </div>
+          <div class="swiper-slide">
+            <img
+              class="portafolio--all-image"
+              src="./assets/images/always-mood-2.png"
+            />
+          </div>
+          <div class="swiper-slide">
+            <img
+              class="portafolio--all-image"
+              src="./assets/images/always-mood-3.png"
+            />
+          </div>
+          ...
+        </div>
+
+        <!-- If we need navigation buttons -->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+      </div>
+    </section>
+    <!-- <section class="section bg-3 portafolio--all page-view" id="portafolio">
       <img
         class="portafolio--all-image"
         src="./assets/images/always-mood.png"
@@ -155,7 +192,8 @@
         class="portafolio--all-image"
         src="./assets/images/always-mood-3.png"
       />
-    </section>
+    </section> -->
+
     <section class="section bg-3 portafolio--all page-view" id="portafolio">
       <img class="portafolio--all-image" src="./assets/images/pokespicy.jpg" />
     </section>
